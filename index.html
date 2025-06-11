@@ -1,45 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Predicting Income Level Using Census Data</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      max-width: 800px;
-      line-height: 1.6;
+      font-family: 'Inter', sans-serif;
+      background-color: #f9fafb;
+      color: #1f2937;
+      margin: 40px auto;
+      max-width: 900px;
+      line-height: 1.7;
+      padding: 0 20px;
     }
-    h1, h2 {
-      color: #333;
+    h1, h2, h3 {
+      color: #111827;
     }
-    ul {
-      padding-left: 20px;
+    h1 {
+      font-size: 2rem;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 0.3rem;
+      margin-top: 1rem;
     }
     a {
-      color: #0066cc;
+      color: #3b82f6;
       text-decoration: none;
     }
     a:hover {
       text-decoration: underline;
     }
+    ul {
+      padding-left: 20px;
+    }
     .footer {
       margin-top: 40px;
       font-size: 0.9em;
-      color: #666;
+      color: #6b7280;
+    }
+    .banner {
+      width: 100%;
+      max-height: 350px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 25px;
+    }
+    .button {
+      background-color: #3b82f6;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      font-size: 0.9rem;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+    .button:hover {
+      background-color: #2563eb;
     }
   </style>
 </head>
 <body>
 
+  <img src="images/1719444449937.jpeg" alt="Project Banner" class="banner" />
+
   <h1>Predicting Income Level Using Census Data</h1>
   <h3>A Comparative Analysis of Machine Learning Models</h3>
 
 
-  <h2>📄 Project Summary</h2>
-  <p>This project analyzes the U.S. Census Income dataset using machine learning to predict whether individuals earn more than $50,000 annually. We used a robust data preprocessing pipeline and evaluated multiple classifiers — Random Forest, XGBoost, KNN, Decision Tree, and Logistic Regression — using performance metrics like accuracy, precision, recall, and AUC.</p>
+  <button class="button" onclick="toggle('summary')">Toggle Project Summary</button>
+  <div id="summary" style="display:none;">
+    <p>This project analyzes the U.S. Census Income dataset using machine learning to predict whether individuals earn more than $50,000 annually. We used a robust data preprocessing pipeline and evaluated multiple classifiers — Random Forest, XGBoost, KNN, Decision Tree, and Logistic Regression — using performance metrics like accuracy, precision, recall, and AUC.</p>
 
-  <p>Through dimensionality reduction, feature selection, and class balancing, we uncovered how factors such as education, marital status, and age shape income predictions. Random Forest emerged as the top performer with an AUC of 0.93.</p>
+    <p>Through dimensionality reduction, feature selection, and class balancing, we uncovered how factors such as education, marital status, and age shape income predictions. Random Forest emerged as the top performer with an AUC of 0.93.</p>
+  </div>
 
   <h2>🔗 Explore the Project</h2>
   <ul>
@@ -50,18 +84,29 @@
 
   <h2>📁 Repository Structure</h2>
   <ul>
-    <li><strong>Data/</strong> — Contains the cleaned version of the UCI Census Income dataset</li>
-    <li><strong>utils/</strong> — Helper functions and draft notebooks used during model development</li>
-    <li><strong>images/</strong> — Figures and charts referenced in the report</li>
-    <li><strong>notebook.ipynb</strong> — Final machine learning pipeline, modeling, and evaluation code</li>
-    <li><strong>README.md</strong> — Full report summarizing methodology and results</li>
+    <li><strong>Data/</strong> — Census dataset (cleaned version)</li>
+    <li><strong>utils/</strong> — Helper functions and draft notebooks</li>
+    <li><strong>images/</strong> — Visual assets used in the report and site</li>
+    <li><strong>notebook.ipynb</strong> — Final notebook with ML pipeline</li>
+    <li><strong>README.md</strong> — Full written report in Markdown</li>
   </ul>
 
   <div class="footer">
     Visit the full project on <a href="https://github.com/Sadia-Data-Science/Predicting-Income-Level-Using-Census-Data-A-Comparative-Analysis-of-Machine-Learning-Models">GitHub</a>.
   </div>
 
+  <script>
+    function toggle(id) {
+      var el = document.getElementById(id);
+      el.style.display = el.style.display === 'none' ? 'block' : 'none';
+    }
+  </script>
+
 </body>
 </html>
+
+
+
+
 
 
