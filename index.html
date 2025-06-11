@@ -68,7 +68,20 @@
   <h3>A Comparative Analysis of Machine Learning Models</h3>
 
 
-  <button class="button" onclick="toggle('summary')">Toggle Project Summary</button>
+<button class="button" onclick="toggle('summary', this)">📖 Show Project Summary</button>
+
+<script>
+  function toggle(id, btn) {
+    var el = document.getElementById(id);
+    if (el.style.display === 'none') {
+      el.style.display = 'block';
+      btn.innerText = '📖 Hide Project Summary';
+    } else {
+      el.style.display = 'none';
+      btn.innerText = '📖 Show Project Summary';
+    }
+  }
+</script>
   <div id="summary" style="display:none;">
     <p>This project analyzes the U.S. Census Income dataset using machine learning to predict whether individuals earn more than $50,000 annually. We used a robust data preprocessing pipeline and evaluated multiple classifiers — Random Forest, XGBoost, KNN, Decision Tree, and Logistic Regression — using performance metrics like accuracy, precision, recall, and AUC.</p>
 
