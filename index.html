@@ -2,31 +2,66 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Income Prediction with Census Data</title>
+  <title>Predicting Income Level Using Census Data</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      max-width: 800px;
+      line-height: 1.6;
+    }
+    h1, h2 {
+      color: #333;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
+
   <h1>Predicting Income Level Using Census Data</h1>
+  <h3>A Comparative Analysis of Machine Learning Models</h3>
 
-  <p><strong>Contributors:</strong> Ray .<br>
-  <strong>Affiliation:</strong> School of Engineering, University of St. Thomas, St. Paul, Minnesota</p>
 
-  <h2>Project Summary</h2>
-  <p>This project analyzes the U.S. Census Income dataset using machine learning to predict whether individuals earn more than $50,000 annually. We evaluate models like Random Forest, XGBoost, KNN, and Logistic Regression, and explore feature importance and socioeconomic patterns in income distribution.</p>
+  <h2>📄 Project Summary</h2>
+  <p>This project analyzes the U.S. Census Income dataset using machine learning to predict whether individuals earn more than $50,000 annually. We used a robust data preprocessing pipeline and evaluated multiple classifiers — Random Forest, XGBoost, KNN, Decision Tree, and Logistic Regression — using performance metrics like accuracy, precision, recall, and AUC.</p>
 
-  <h2>Explore the Project</h2>
+  <p>Through dimensionality reduction, feature selection, and class balancing, we uncovered how factors such as education, marital status, and age shape income predictions. Random Forest emerged as the top performer with an AUC of 0.93.</p>
+
+  <h2>🔗 Explore the Project</h2>
   <ul>
-    <li><a href="notebook.ipynb">📓 View Final Jupyter Notebook</a></li>
-    <li><a href="README.md">📄 Project Report (Markdown)</a></li>
-    <li><a href="images/Figure6.png">📊 Sample Visualization</a></li>
+    <li><a href="notebook.ipynb">📓 Final Jupyter Notebook (notebook.ipynb)</a></li>
+    <li><a href="README.md">📘 Project Report (README.md)</a></li>
+    <li><a href="images/Figure6.png">📊 Key Visualization: Feature Importance</a></li>
   </ul>
 
-  <h2>Repository Structure</h2>
+  <h2>📁 Repository Structure</h2>
   <ul>
-    <li><strong>Data/</strong> – Census dataset (public subset)</li>
-    <li><strong>utils/</strong> – Helper functions and draft notebooks</li>
-    <li><strong>images/</strong> – Graphs and visualizations used in the report</li>
+    <li><strong>Data/</strong> — Contains the cleaned version of the UCI Census Income dataset</li>
+    <li><strong>utils/</strong> — Helper functions and draft notebooks used during model development</li>
+    <li><strong>images/</strong> — Figures and charts referenced in the report</li>
+    <li><strong>notebook.ipynb</strong> — Final machine learning pipeline, modeling, and evaluation code</li>
+    <li><strong>README.md</strong> — Full report summarizing methodology and results</li>
   </ul>
 
-  <p>Visit the full repository on <a href="https://github.com/Sadia-Data-Science/Predicting-Income-Level-Using-Census-Data-A-Comparative-Analysis-of-Machine-Learning-Models">GitHub</a>.</p>
+  <div class="footer">
+    Visit the full project on <a href="https://github.com/Sadia-Data-Science/Predicting-Income-Level-Using-Census-Data-A-Comparative-Analysis-of-Machine-Learning-Models">GitHub</a>.
+  </div>
+
 </body>
 </html>
+
+
